@@ -6,4 +6,12 @@ const action_addCharacterById = id => {
   return action;
 };
 
-export { action_addCharacterById };
+const action_deleteCharacterById = id => {
+  const action = {
+    type: "DELETE_CHARACTER",
+    id: id
+  };
+  return action;
+};
+
+export { action_addCharacterById, action_deleteCharacterById };
